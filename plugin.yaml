@@ -1,0 +1,13 @@
+name: browser-cloudbrowser
+version: 0.1.0
+description: Run a Hermes browser session in an isolated Chrome desktop on Cloudbrowser.
+author: Cloudbrowser contributors
+kind: backend
+requires_hermes: ">=0.23.4"
+provides_browser_providers:
+  - cloudbrowser
+requires_env:
+  - name: CLOUDBROWSER_API_KEY
+    description: Workspace API key for Cloudbrowser browser creation and cleanup.
+    url: https://cloudbrowser.tv/docs/api
+    secret: true
